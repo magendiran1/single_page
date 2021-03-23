@@ -65,21 +65,35 @@ const StyleUse = () => {
 
 
 
-    debugger;
+
     const listItem = state.listPersons.students.map((stdList, index) => {
         return (<div key={index}><h1>My name is {stdList.name} my age is {stdList.age}
         </h1><button onClick={() => removeList(stdList.name)}>Delete</button></div>)
     })
 
+    const style ={
+        backgroundColor:'red',
+        color :'white',
+        font: 'inherit',
+        border: '1px solid bule',
+        padding: '8px',
+        cursor: 'pointer'
+
+    }
     const dataVisible=state.listPersons.dataVisible
-    
+    let show = null
+if(dataVisible){
+show=(<p>{listItem}</p>)
+sytle.backgroundColor='green'
+}
+
     return (
         
         <div>
 
-            <button onClick={()=>visibleDate()} >Show The List</button> <br />
+            <button style={style} onClick={()=>visibleDate()} >Show The List</button> <br />
             <button onClick={()=>dataUpdateList()}>updateList</button>
-            {dataVisible ? (<h2>{listItem} </h2>) : (null)}
+          {show}
 
         </div>
     )
