@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../App.css'
 const StyleUse = () => {
  
 
@@ -84,13 +84,16 @@ const StyleUse = () => {
     let show = null
 if(dataVisible){
 show=(<p>{listItem}</p>)
-sytle.backgroundColor='green'
+style.backgroundColor='green'
 }
 
+let classes =['red','blue'].join(' ');
+
+console.log(classes)
     return (
         
         <div>
-
+<p className={classes}> This is Working Fine</p>
             <button style={style} onClick={()=>visibleDate()} >Show The List</button> <br />
             <button onClick={()=>dataUpdateList()}>updateList</button>
           {show}
