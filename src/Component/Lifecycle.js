@@ -68,13 +68,13 @@ class LifeCycle extends Component {
 
 // IF  i need to Use getSnapshotBeforeUpdate we have use componentDidUpdate method also Then only it will work 
 
-getSnapshotBeforeUpdate(prevprops,prevstate){
+// getSnapshotBeforeUpdate(prevprops,prevstate){
 
-}
+// }
 
-componentDidUpdate(){
+// componentDidUpdate(){
 
-}
+// }
 
 render() {
         console.log('Calling render Method')
