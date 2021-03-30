@@ -68,7 +68,7 @@ class LifeCycle extends Component {
 
 // IF  i need to Use getSnapshotBeforeUpdate we have use componentDidUpdate method also Then only it will work 
 
-getSnapshotBeforeUpdate(){
+getSnapshotBeforeUpdate(prevprops,prevstate){
 
 }
 
