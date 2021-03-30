@@ -3,6 +3,7 @@ import './App.css';
 import We from './Component/welcome'
 import Greet from './Component/Greet'
 import LoginControl from './Component/Conditional/Conditon'
+import LifeCycle from './Component/Lifecycle';
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
      <We />
      <Greet />
      <LoginControl />
-   
+   <LifeCycle text='10' />
 
     </div>
   );

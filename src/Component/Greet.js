@@ -1,29 +1,26 @@
-import React ,{Component} from 'react'
+import React, { Component } from 'react'
 import JSX from './JSX'
-import {Props1} from './props'
+import { Props1 } from './props'
 import List from './Conditional/list'
 import UserInput from '../Assignment/UserInput'
 import Style from './Style'
 
 class Greet extends Component {
-render()
-{
-return (
-    <div>
-    <h1> Greeting to Class Component</h1>
-    <JSX />
-    <div>
-    <Props1 name="Mendy"/>
-    <h1>This is New props children</h1>
-    <List />
-    <UserInput />
-    <Style />
-    </div>
+    render() {
 
-
-    </div>
-)
-}
+        console.log('testing ')
+        return (
+            <>
+                <span><p> Greeting to Class Component</p></span>
+                <JSX />
+                <Props1 name="Mendy" />
+                <p>This is New props children</p>
+                <List />
+                <UserInput />
+                <Style />
+            </>
+        )
+    }
 }
 
 export default Greet;
