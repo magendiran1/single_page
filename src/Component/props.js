@@ -1,6 +1,6 @@
 import React from 'react'
 import State from './state'
- function Props(props) {
+function Props(props) {
     return (
         <div>
             <h1> Welcome {props.name}</h1>
@@ -9,10 +9,12 @@ import State from './state'
 }
 
 export const Props1 = (props) => {
-    return (<div>
-        <State />
-<h1  > Welcome to Our Arrow function Mr {props.name}</h1>
-    </div>)
+    return (
+
+        <div>
+            <State />
+            <h1  > Welcome to Our Arrow function Mr {props.name}</h1>
+        </div>)
 
 }
 

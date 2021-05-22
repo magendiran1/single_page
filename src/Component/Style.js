@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css'
 import Radium from 'radium';
+import {LearnUseEffect} from './useEffect'
 const StyleUse = () => {
 
 
@@ -112,7 +113,7 @@ if(state.listPersons.students.length>=3){
             <button style={style} onClick={() => visibleDate()} >Show The List</button> <br />
             <button onClick={() => dataUpdateList()}>updateList</button>
             {show}
-
+<LearnUseEffect />
         </div>
     )
 }

@@ -8,13 +8,11 @@ import Style from './Style'
 class Greet extends Component {
     render() {
 
-        console.log('testing ')
+
         return (
             <>
-                <span><p> Greeting to Class Component</p></span>
-                <JSX />
                 <Props1 name="Mendy" />
-                <p>This is New props children</p>
+                <JSX />
                 <List />
                 <UserInput />
                 <Style />
@@ -23,4 +21,6 @@ class Greet extends Component {
     }
 }
 
+//   <div><h1> Greeting to Class Component</h1></div>
+//   <div> <h1>This is New props children</h1></div>       
 export default Greet;
